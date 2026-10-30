@@ -1,4 +1,4 @@
-# 🛠️ Bancada
+# Bancada
 
 [![Testes Python](https://github.com/LuanVictorz/bancada-python-sql/actions/workflows/tests.yml/badge.svg)](https://github.com/LuanVictorz/bancada-python-sql/actions)
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
@@ -12,7 +12,7 @@ Gestão de manutenção de equipamentos com Python, SQLite e interface desktop. 
 
 ---
 
-## 📸 Demonstração das Funcionalidades
+## Demonstração das Funcionalidades
 
 ### 1. Gestão de Ordens de Serviço (OS)
 
@@ -79,7 +79,7 @@ Mapeamento do parque de equipamentos atendidos pela bancada:
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 * **Python 3.11 ou superior** com suporte a Tkinter (incluso por padrão na instalação oficial do Python para Windows).
@@ -99,11 +99,11 @@ Para começar a cadastrar seus próprios dados a partir do zero:
 python main.py
 ```
 
-*Dica no Windows:* Você também pode simplesmente dar duplo clique em `executar.cmd` ou rodar `executar.cmd --demo`. Os arquivos do banco de dados ficam salvos de forma isolada na pasta `dados/`.
+*Nota no Windows:* É possível utilizar os atalhos `executar.cmd` ou `executar.cmd --demo`. Os arquivos do banco de dados ficam salvos de forma isolada no diretório `dados/`.
 
 ---
 
-## 🧪 Testes Automatizados
+## Testes Automatizados
 
 O projeto possui **58 testes automatizados** cobrindo integridade de banco de dados, transações atômicas, cálculos financeiros e regras de negócio da interface.
 
@@ -123,7 +123,7 @@ python main.py --demo --check
 
 ---
 
-## 🏛️ Decisões Técnicas e Arquitetura
+## Decisões Técnicas e Arquitetura
 
 * **Dinheiro em Centavos:** Todos os valores monetários são representados como números inteiros em centavos no SQLite e nos cálculos, eliminando imprecisões de arredondamento inerentes a números de ponto flutuante (*floating point*).
 * **Histórico de Custo no Consumo:** Ao consumir uma peça em uma OS, o custo unitário vigente no momento é gravado de forma imutável na transação. Compras futuras com valores diferentes não distorcem o custo real de ordens já fechadas.
@@ -133,7 +133,7 @@ python main.py --demo --check
 
 ---
 
-## 📚 Documentação Complementar
+## Documentação Complementar
 
 * [Guia de Uso Passo a Passo](docs/USO.md)
 * [Arquitetura e Modelo Entidade-Relacionamento](docs/ARQUITETURA.md)
