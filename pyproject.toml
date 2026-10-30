@@ -1,0 +1,10 @@
+[project]
+name = "bancada-python-sql"
+version = "1.0.0"
+description = "Gestão local de manutenção de equipamentos, estoque e custos."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
